@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-livestomp": {
+      "projectType": "library",
+      "root": "projects/ngx-livestomp",
+      "sourceRoot": "projects/ngx-livestomp/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-livestomp/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-livestomp/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-livestomp/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-livestomp/src/test.ts",
+            "tsConfig": "projects/ngx-livestomp/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-livestomp/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-livestomp"
+}

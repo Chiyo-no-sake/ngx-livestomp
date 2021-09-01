@@ -1,0 +1,13 @@
+{
+  "name": "ngx-livestomp",
+  "version": "1.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@stomp/ng2-stompjs": "^8.0.0",
+    "@stomp/rx-stomp": "^1.1.4"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
