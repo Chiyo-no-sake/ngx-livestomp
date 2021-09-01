@@ -1,6 +1,6 @@
 # LiveStomp Client for Angular
 
-This library provides easy access to events and variables with real-time updates from a server using my library LiveStomp.
+This library provides easy access to events and variables with real-time updates from a server using my library <a href="https://github.com/KatonKalu/SpringLiveStomp">SpringLiveStomp</a>.
 
 ## Installation
 
